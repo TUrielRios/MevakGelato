@@ -22,7 +22,7 @@ const products: Product[] = [
     id: 1,
     name: "COOKIES & CREAM",
     description:
-      "Helado a base de crema chantilly sembrado con un veteado de cookies exclusivamente desarrollado por Lucciano's en Italia.",
+      "Helado a base de crema chantilly sembrado con un veteado de cookies exclusivamente desarrollado en Italia.",
     image: helado1,
   },
   {
