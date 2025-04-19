@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import MenuItem from './MenuItem';
 import { Instagram, Facebook, Twitter } from 'lucide-react';
+import members1 from '../../assets/members/members1.png';
+import members2 from '../../assets/members/members2.png';
+import members3 from '../../assets/members/members3.png';
+import helado1 from '../../assets/helados/helado1.png';
+
+import lab from '../../assets/lab/lab.png';
+import party from '../../assets/party/party.png';
 
 interface MenuOverlayProps {
   isOpen: boolean;
@@ -26,26 +33,22 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({
 
   const menuImages: Record<string, string[]> = {
     'historia': [
-      'https://images.pexels.com/photos/2531184/pexels-photo-2531184.jpeg',
+      lab,
     ],
 
     'gelato': [
-      'https://images.pexels.com/photos/1352278/pexels-photo-1352278.jpeg',
-      'https://images.pexels.com/photos/1332267/pexels-photo-1332267.jpeg',
+      helado1
     ],
     'Members Club': [
-      'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg',
-    ],
+      members2    ],
     'Laboratorio': [
-      'https://images.pexels.com/photos/1855214/pexels-photo-1855214.jpeg',
-      'https://images.pexels.com/photos/2253643/pexels-photo-2253643.jpeg',
+      members3
     ],
     'visitas': [
-      'https://images.pexels.com/photos/3184192/pexels-photo-3184192.jpeg',
+      members1,
     ],
     'party-service': [
-      'https://images.pexels.com/photos/587739/pexels-photo-587739.jpeg',
-    ],
+      party,],
     'franquicias': [
       'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg',
     ],

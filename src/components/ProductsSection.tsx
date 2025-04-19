@@ -7,6 +7,9 @@ import helado1 from "../../assets/helados/helado1.png"
 import helado2 from "../../assets/helados/helado2.png"
 import helado3 from "../../assets/helados/helado3.png"
 import helado4 from "../../assets/helados/helado4.png"
+import members1 from "../../assets/members/members1.png"
+import members2 from "../../assets/members/members2.png"
+import members3 from "../../assets/members/members3.png"
 import VideoBackground from "./VideoBackground"
 import videoParty from "../../assets/videos/videoparty.mp4"
 
@@ -57,27 +60,27 @@ const newsItems: NewsItem[] = [
   {
     id: 1,
     tag: "LANZAMIENTOS",
-    title: "CHOCOLATE DUBAI",
+    title: "DESCUBRIÍ EUROPA EN CADA BOCADO",
     description:
-      "El sabor del lujo árabe. Todo un viaje sensorial que se traduce en un helado de chocolate blanco sabor chocolate Dubai. El mejor chocolate belga, veteado con caramelo con una base de Pistachos y el principesco sabor que proviene del chocolate Dubai. Una verdadera obra maestra del sabor.",
-    image: "https://images.pexels.com/photos/2373520/pexels-photo-2373520.jpeg",
+      "El sabor del lujo europeo. Todo un viaje sensorial, El mejor chocolate belga, veteado con caramelo con una base de Pistachos. Una verdadera obra maestra del sabor.",
+    image: members1,
   },
   {
     id: 2,
     tag: "LANZAMIENTOS",
-    title: "AVELLA COLLECTION",
+    title: "MEMBRESÍA OMAKASE",
     description:
-      "Presentamos nuestra nueva línea de cremas premium, creadas para los paladares más exigentes. Avella Collection brinda Grandeza a cada Momento.",
-    image: "https://images.pexels.com/photos/2373520/pexels-photo-2373520.jpeg",
-  },
+      "Dos entregas mensuales con 5 potes de 120 g, especialmente seleccionados para vos por nuestro Maestro Heladero. Ideal para quienes disfrutan de la innovación."
+,    image: members2,
+    },
   {
     id: 3,
     tag: "LANZAMIENTOS",
-    title: "NEW FLAVOR! PISTACCHIO CHEESECAKE",
+    title: "MEMBRESÍA TRADICIONAL",
     description:
-      "Descubrí el Pistacchio Cheesecake con nuestra nueva base de cheesecake batida con una delicada capa de pistacho. Un sabor único que te transportará a Italia.",
-    image: "https://images.pexels.com/photos/2373520/pexels-photo-2373520.jpeg",
-  },
+"Una entrega mensual de 4 potes de 250 g: tres a elección y uno sorpresa del menú Omakase. Perfecta para los amantes de lo clásico con un toque especial.",
+      image: members3,
+    },
 ]
 
 // Custom hook for scroll animations
@@ -297,9 +300,9 @@ const ProductsSection: React.FC = () => {
       /* Cursor animation - only show on non-touch devices */
       @media (hover: hover) and (pointer: fine) {
         .custom-cursor {
-          width: 1px;
-          height: 1px;
-          border: 2px solid #1f9e97;
+          width: 0px;
+          height: 0px;
+          border: 0px solid #1f9e97;
           border-radius: 50%;
           position: fixed;
           pointer-events: none;
